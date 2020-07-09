@@ -1,1 +1,1 @@
-worker: freggersbot
+worker: bot.py
