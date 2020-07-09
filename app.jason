@@ -1,0 +1,14 @@
+{
+  "name": "ANY NAME",
+  "description": "ANY DESCRIPTION",
+  "image": "heroku/python",
+  "repository": "GITHUB REPOSITORY URL",
+  "keywords": ["python"],
+  "environments": {
+    "main": {
+      "scripts": {
+        "main": "freggersbot"
+      }
+    }
+  }
+}
