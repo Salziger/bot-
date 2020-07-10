@@ -1,5 +1,5 @@
 requests
-Py3AMF
+pyamf
 select
 HTMLParser
 
