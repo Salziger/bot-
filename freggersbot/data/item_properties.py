@@ -1,0 +1,26 @@
+#Copyright (c) 2020 Jan Kiefer
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+
+class ItemProperties:
+	
+	TYPE_NONE = 0
+	TYPE_SHOP = 1
+	TYPE_DOORBELL = 2
+	FLAG_TYPE = 1
+	FLAG_NO_SELECT = 2
+	
+	def __init__(self, data):
+		self.type = 0
+		self.selectable = True
+		if data != None and len(data) > 0:
+			flags = data.pop(0)
+			if (flags & ItemProperties.FLAG_TYPE) != 0:
+				self.type = data.pop(0)
+			if (flags & ItemProperties.FLAG_NO_SELECT) != 0:
+				self.selectable = data.pop(0) == 0
