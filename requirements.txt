@@ -1,5 +1,4 @@
 requests
 PyAMF
-select
 HTMLParser
 
