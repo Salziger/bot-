@@ -15,7 +15,7 @@ import traceback
 from datetime import datetime, date, timezone, timedelta
 
 from .freggers import Freggers, Event
-from .locale.en import LocaleEN
+from .locale.de import LocaleDE
 from .utils.item_search import ItemSearch
 from .utils.item_pickup import ItemPickup
 from .utils import format_time
