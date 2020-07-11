@@ -48,7 +48,7 @@ class BasicFreggersBot(FreggersBot):
 			log_error(e)
 
 bots = [
-	BasicFreggersBot('test1234','babaali2012'),
+	BasicFreggersBot('reagirl','babaali2012'),
 	BasicFreggersBot('Username2', 'Password2'),
 	BasicFreggersBot('Username3', 'Password3'),
 ]
