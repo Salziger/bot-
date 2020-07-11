@@ -70,7 +70,7 @@ class FreggersBot(Freggers):
 	MIN_SEARCH_DONE_DELAY = 0.2
 	MAX_SEARCH_DONE_DELAY = 8
 	
-	def __init__(self, username, password, localeItems = LocaleDE, is_debug = False):
+	def __init__(self, username, password, localeItems = LocaleEN, is_debug = False):
 		self.username = username
 		self.password = password
 		self.localeItems = localeItems
