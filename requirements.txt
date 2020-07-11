@@ -1,4 +1,4 @@
 requests
-pyamf
+Py3AMF
 HTMLParser
 
